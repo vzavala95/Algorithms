@@ -26,12 +26,9 @@ def dna_match_topdown(DNA1, DNA2):
         if not dnaMemo[string1 - 1][string2 - 1] == -1:
             return dnaMemo[string1 - 1][string2 - 1]
 
-        DNA1FinalCharacter = DNA1[string1 - 1]
-        DNA2FinalCharacter = DNA2[string2 - 1]
-
         # if there is a match between characters. If looking at a DP table, we would see that this subproblem answer =
         # 1 + the answer to the subproblem with no match in characters
-        if DNA1FinalCharacter == DNA2FinalCharacter:
+        if DNA1[string1 - 1] == DNA2[string2 - 1]:
             dnaMemo[string1 - 1][string2 - 1] = 1 + dna_helper(string1 - 1, string2 - 1, dnaMemo)
 
         # if characters in string do not match, we have to answer subproblems and compare between answers.
