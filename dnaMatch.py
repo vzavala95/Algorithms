@@ -43,10 +43,11 @@ def dna_match_topdown(DNA1, DNA2):
     dnaMemo = [[-1 for j in range(len(DNA2))] for i in range(len(DNA1))]
     return dna_helper(len(DNA1), len(DNA2), dnaMemo)
 
-DNA1 = "adqufhfff"
-DNA2 = "fkafhdjfn"
-
-print("The length of the longest continuous DNA string alignment is:", dna_match_topdown(DNA1, DNA2))
+# testing
+# DNA1 = "adqufhfff"
+# DNA2 = "fkafhdjfn"
+#
+# print("The length of the longest continuous DNA string alignment is:", dna_match_topdown(DNA1, DNA2))
 
 def dna_match_bottomup(DNA1, DNA2):
     """
@@ -81,7 +82,8 @@ def dna_match_bottomup(DNA1, DNA2):
 
     return table_arr[string2][string1]
 
-DNA1 = "abcdef"
-DNA2 = "abcdef"
-
-print("The length of the longest continuous DNA string alignment is:", dna_match_bottomup(DNA1, DNA2))
+# testing
+# DNA1 = "abcdef"
+# DNA2 = "abcdef"
+#
+# print("The length of the longest continuous DNA string alignment is:", dna_match_bottomup(DNA1, DNA2))
