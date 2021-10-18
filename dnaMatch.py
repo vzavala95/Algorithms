@@ -87,3 +87,15 @@ def dna_match_bottomup(DNA1, DNA2):
 # DNA2 = "abcdef"
 #
 # print("The length of the longest continuous DNA string alignment is:", dna_match_bottomup(DNA1, DNA2))
+
+
+############################################## CITATIONS USED #################################################
+
+# https://www.youtube.com/watch?v=ASoaQq66foQ
+# https://www.youtube.com/watch?v=sSno9rV8Rhg
+# https://www.youtube.com/watch?v=Qf5R-uYQRPk&t=390s
+# Oregon State CS 325 Lecture - Exploration: Dynamic Programming - Longest Common Subsequence Problem
+
+###############################################################################################################
+
+
