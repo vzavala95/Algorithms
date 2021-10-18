@@ -85,24 +85,3 @@ DNA1 = "abcdef"
 DNA2 = "abcdef"
 
 print("The length of the longest continuous DNA string alignment is:", dna_match_bottomup(DNA1, DNA2))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
