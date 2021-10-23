@@ -1,4 +1,8 @@
+# Citations
+# I used CS 325: Week 4 - Dynamic Programming and Backtracking Exploration pseudocode to solve this problem
+
 import copy
+
 
 def powerset(input):
     """
@@ -7,7 +11,10 @@ def powerset(input):
     :return: int
     """
 
-    # in progress
+    result = []
+    powerset_helper(len(input) - 1, [], input, result)
+    return result
+
 
 def powerset_helper(pointer, choices_made, input, result):
     """
@@ -34,12 +41,11 @@ def powerset_helper(pointer, choices_made, input, result):
     powerset_helper(pointer - 1, choices_made, input, result)
 
 
+################### TESTING ##################
 
-
-
-
-
-
+# if __name__ == "__main__":
+#
+#     print(powerset([1, 2]))
 
 
 
