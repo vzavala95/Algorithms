@@ -1,18 +1,11 @@
-# Implement a backtracking algorithm
-# Given a collection of amount values (A) and a S sum (S), find all unique combinations in A where the amount
-# values sum up to S.
-# Each amount value may be used only once in the combination.
-# The solution set should not contain duplicate combinations.
-# Amounts will be positive numbers.
-# Example: A = [11,1,3,2,6,1,5]; S Sum = 8 Result = [3, 5]
-# [2, 6] [1, 2, 5] [1, 1, 6]
-
-# a) Describe a backtracking algorithm to solve this problem.
+# Citations used:
+# https://www.youtube.com/watch?v=PFkUl_rW3_w
+# https://stackoverflow.com/questions/4632322/finding-all-possible-combinations-of-numbers-to-reach-a-given-sum
 
 # Since we need to find all possible results, and not best result we can use backtracking instead of dynamic
 # programming for this problem. To solve, we would need to iterate through each element in the array, starting from the
 # beginning of the array, storing as we go. When we see that the target value is less than the sum of the combination of
-# the choices, we backtrack to the previous selection and try a different path to find the solution.
+# the choices, we backtrack to the previous selection by using pop() and try a different path to find the solution.
 
 
 # b) implementation of solution
@@ -58,8 +51,9 @@ def amount_helper(result, combination, A, start, S):
             # backtrack to remove last selection in the array
             combination.pop()
 
-if __name__ == '__main__':
-    print(amount([11, 1, 3, 2, 6, 1, 5], 8))
+############### TESTING #################
+# if __name__ == '__main__':
+#     print(amount([11, 1, 3, 2, 6, 1, 5], 8))
 
 
 # c) Time-Complexity: Exponential Complexity - O(2^n)
